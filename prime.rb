@@ -2,9 +2,14 @@ require 'prime'
 
 
 # Add  code here!
-def prime?(number)
-  (2..number/2).none? {|n| return false if number <= 1 || number % n == 0}
-end
+
 
 def prime?(number)
-  (2..number/2).none? {
+  if number >= 2
+    (2..number - 1).all? do |x|
+      number % x != 0
+    end
+  else
+    return false
+  end
+end
