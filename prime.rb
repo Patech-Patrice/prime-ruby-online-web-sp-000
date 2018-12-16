@@ -1,4 +1,7 @@
 require 'benchmark'
 
 
-def prime?(integer)# Add  code here!
+# Add  code here!
+def prime?(num)
+  sieve(num).include?(num)
+end
