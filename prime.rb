@@ -10,6 +10,6 @@ def prime?(number)
       number % x != 0
     end #returns true for prime numbers
   else
-    return false #
+    return false # returns false for non-prime numbers
   end
 end
