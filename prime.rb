@@ -3,5 +3,5 @@ require 'prime'
 
 # Add  code here!
 def prime? (integer)
-  Prime.prime?(n)
+ number >= 2 && (2..number/2).none? { |n| number % n == 0 }
   end
